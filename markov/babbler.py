@@ -152,7 +152,7 @@ class Babbler:
         The resulting value may contain duplicates, because one n-gram may stop
         multiple sentences. Probably a one-line method.
         """
-         return self.stoppers
+        return self.stoppers
 
     def get_successors(self, ngram):
         """
@@ -223,8 +223,8 @@ class Babbler:
         6: Repeat from step 2.
         """
 
-       current = random.choice(self.starters)
-       sentence = current.split()
+        current = random.choice(self.starters)
+        sentence = current.split()
 
         while True:
             next_word = self.get_random_successor(current)
